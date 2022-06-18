@@ -1,0 +1,147 @@
+.header__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-bar {
+    display: flex;
+}
+
+.nav-bar__link a:not(:last-child) {
+    margin-right: 77px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;    
+}
+
+.link:hover {
+    color: #56E1E1;  
+    transition: 0.3s ease;
+}
+
+.conatacts__phone {
+    display: block;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: right;
+    color: #000;
+}
+
+.contacts__text {
+    display: inline-block;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: right;
+    color: #000;
+}
+
+.header__menu {
+    visibility: hidden;
+}
+
+ul {
+    list-style: none;
+    display: block;
+    margin:0px;
+    padding:0px;
+}
+
+ul:after {
+    display: block;
+    float: none;
+    content: ' ';
+    clear: both;
+}
+
+ul.header__menu > li {
+    float: left;
+    position: relative;
+}
+
+ul.header__menu > li > a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #da570f;
+}
+
+ul.header__menu > li > a:hover {
+    background-color: #eb9316;
+}
+
+ul.ssubmenuu {
+    position: absolute;
+    width: 240px;
+    top: 37px;
+    left:0px;
+    display: none;
+    background-color: white;
+}
+
+ul.ssubmenuu > li {
+    display: block;
+}
+
+ul.ssubmenuu > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #da570f;
+}
+
+ul.ssubmenuu > li > a:hover {
+    background-color: #eb9316;
+    text-decoration: underline;
+}
+
+ul.header__menu > li:hover > ul.ssubmenuu {
+    display: block;
+}
+
+
+@media (max-width: 1044px) {
+    /* .nav-bar__link a:not(:last-child) {
+        margin-right: 50px;
+    } */
+}
+
+@media (max-width: 984px) {
+    .conatacts__phone {
+        font-size: 15px;
+        line-height: 10px;
+    }
+    
+    .contacts__text {
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+    .link {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .header__logo {
+        width: 41px;
+        height: 54px;
+    }
+}
+
+@media (max-width:715px) {
+    .header__menu {
+        visibility: visible;
+        text-align: center;
+    }
+
+    .header__nav-bar {
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.woff') format('woff');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    margin-bottom: 54px;
+}
+
+.breadcrumb__container {
+    background-color: #56E1E1;
+    padding: 32px 0;
+    margin-bottom: 53px;
+}
+
+.breadcrumb__link {
+    list-style: none;
+    text-align: center;
+}
+
+.breadcrumb__link li {
+    display: inline;
+    font-size: 18px;
+}
+
+.breadcrumb__link li+li:before {
+    padding: 8px;
+    color: #fff;
+    content: "/\00a0";
+}
+
+.breadcrumb__link li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb__link li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.hero {
+    margin-bottom: 200px;
+}
+
+.hero__title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 25px;
+}
+
+.hero__h2-title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero__phone {
+    margin-bottom: 60px;
+}
+
+.phone {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.hero__phone a{
+    text-decoration: none;
+    color: #000;
+}
+
+.hero__contacts {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.contacts {
+    margin-bottom: 100px;
+    width: 250px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contacts h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.contacts p {
+    font-size: 20px;
+}

@@ -1,0 +1,506 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('public/fonts/Roboto-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('public/fonts/Roboto-Bold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: #56E1E1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 120px;
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+
+.hero__title {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.hero__container {
+    max-width: 950px;
+    padding: 30px 60px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.hero__form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__input input{
+    border: 1px solid #DFE0E0;
+    background-color: white;
+    padding: 0 18px;
+    width: 300px;
+    height: 48px;
+    margin-right: 30px;
+}
+
+.form__btn button {
+    border: none;
+    background-color: #31CB87;
+    color: #fff;
+    width: 110px;
+    height: 48px;
+}
+
+.direction {
+    margin-bottom: 100px;
+}
+
+.direction__title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 25px;
+}
+
+.direction__price {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price__card {
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+} 
+
+.feedback {
+    margin-bottom: 140px;
+}
+
+.feedback__title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 25px;
+}
+
+.feedback__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card__container {
+    border: 1px solid #9A9696;
+    width: 400px;
+    height: 550px;
+    padding: 0 20px;
+}
+
+.card__rating {
+	display: inline-block;
+	font-size: 0;
+    margin-bottom: 12px;
+}
+
+.card__rating span {
+	padding: 0;
+	font-size: 50px;
+	line-height: 1;
+	color: lightgrey;
+}
+
+.card__rating > span:before {
+	content: '★';
+}
+
+.card__rating > span.rating__active {
+	color: gold;
+}
+
+.card__title {
+    font-weight: 700;
+    color: #544F4F;
+    margin-bottom: 20px;
+}
+
+.card__text {
+    color: #794C4C;
+}
+
+.feedback__username {
+    color: #7B6C6C;
+}
+
+.advantages {
+    background-color: #56E1E1;
+    margin-bottom: 50px;
+}
+
+.advantages__title {
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    font-size: 30px;
+}
+
+.advantages__enumeration {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding-bottom: 170px;
+}
+
+.enumeration {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.enumeration p {
+    color: #fff;
+    width: 270px;
+    font-weight: 700;
+}
+
+.standards {
+    margin-bottom: 90px;
+}
+
+.standards__title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 25px;
+}
+
+.paragraph {
+    margin-bottom: 60px;
+}
+
+.paragraph h1 {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 1370px) {
+    .container {
+        max-width: 1120px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .card__container {
+        border: 1px solid #9A9696;
+        width: 350px;
+        height: 500px;
+        padding: 0 20px;
+    }
+
+    .price__card {
+        width: 500px;
+        padding: 25px 0;
+        margin: 20px;
+    } 
+
+    .enumeration p {
+        width: 200px;
+    }
+}
+
+@media (max-width:1138px) {
+    .container {
+        max-width: 1000px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .card__container {
+        border: 1px solid #9A9696;
+        width: 300px;
+        height: 450px;
+        padding: 0 10px;
+    }
+
+    .feedback__card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .price__card {
+        width: 400px;
+        padding: 25px 0;
+        margin: 20px;
+    } 
+
+    .enumeration p {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .enumeration img {
+        width: 50px;
+        height: 74px;
+    }
+}
+
+@media (max-width: 1044px) {
+    .card__rating span {
+        padding: 0;
+        font-size: 30px;
+        line-height: 1;
+        color: lightgrey;
+    }
+
+    .card__container {
+        border: 1px solid #9A9696;
+        width: 250px;
+        height: 400px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .feedback__card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .container {
+        max-width: 900px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .price__card {
+        width: 350px;
+        padding: 15px 0;
+        margin: 20px;
+    } 
+}
+
+@media (max-width: 984px) {
+    .hero__container {
+        max-width: 700px;
+        padding: 30px 60px;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    .form__input input{
+        border: 1px solid #DFE0E0;
+        background-color: white;
+        padding: 0 18px;
+        width: 200px;
+        height: 38px;
+        margin-right: 30px;
+    }
+    
+    .form__btn button {
+        border: none;
+        background-color: #31CB87;
+        color: #fff;
+        width: 70px;
+        height: 38px;
+    }
+
+    .card__container {
+        border: 1px solid #9A9696;
+        width: 200px;
+        height: 350px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .feedback__card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width:896px) {
+    .card__container {
+        border: 1px solid #9A9696;
+        width: 300px;
+        height: 450px;
+        padding: 0 10px;
+        font-size: 17px;
+    }
+
+    .feedback__card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feedback__container {
+        max-width: 400px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .enumeration p {
+        width: 120px;
+        font-size: 13px;
+    }
+
+    .enumeration img {
+        width: 45px;
+        height: 69px;
+    }
+
+    .container {
+        max-width: 800px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .standards__title {
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 60px;
+        font-size: 20px;
+    }
+    
+    .paragraph {
+        margin-bottom: 60px;
+        font-size: 15px;
+    }
+    
+    .paragraph h1 {
+        margin-bottom: 20px;
+    }
+    
+    .price__card {
+        width: 300px;
+        padding: 10px 0;
+        margin: 20px;
+    } 
+}
+
+@media (max-width: 800px) {
+    .enumeration p {
+        width: 120px;
+        font-size: 13px;
+    }
+
+    .enumeration img {
+        width: 45px;
+        height: 69px;
+    }
+
+    .advantages {
+        margin-bottom: 20px;
+    }
+    
+    .advantages__title {
+        padding-bottom: 40px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+    
+    .advantsages__enumeration {
+        gap: 50px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width:715px) {
+    .enumeration p {
+        width: 150px;
+        font-size: 13px;
+    }
+
+    .hero__container {
+        max-width: 400px;
+        padding: 30px 60px;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    .hero__title {
+        margin-bottom: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .form__input input{
+        padding: 0 18px;
+        width: 300px;
+        height: 48px;
+        margin-bottom: 10px;
+    }
+    
+    .form__btn button {
+        width: 300px;
+        height: 48px;
+    }
+
+    .price__card {
+        width: 250px;
+        padding: 5px 0;
+        margin: 20px;
+    } 
+
+    .direction__title {
+        font-size: 20px;
+    }
+
+    .direction {
+        margin-bottom: 50px;
+    }
+
+    .feedback__title {
+        font-size: 20px;
+    }
+}
+
