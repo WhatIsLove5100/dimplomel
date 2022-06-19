@@ -7,16 +7,16 @@
             </small>
             <div class="contacts__list">
                 <ul class="list__link">
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">Частые вопросы</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="/aboutus/">О нас</a></li>
+                    <li><a href="/feedback/">Частые вопросы</a></li>
+                    <li><a href="/contacts/">Контакты</a></li>
                 </ul>
             </div>
             <div class="contacts__connection">
                 <div class="connection__ikon">
-                    <a href=""><img src="public/img/instagram.svg" class="ikon" alt="logo instagram"></a>
-                    <a href=""><img src="public/img/vk.svg" class="ikon vk" alt="logo vk"></a>
-                    <a href=""><img src="public/img/facebook.svg" class="ikon" alt="logo facebook"></a>
+                    <a href=""><img src="img/instagram.svg" class="ikon" alt="logo instagram"></a>
+                    <a href=""><img src="img/vk.svg" class="ikon vk" alt="logo vk"></a>
+                    <a href=""><img src="img/facebook.svg" class="ikon" alt="logo facebook"></a>
                 </div>
                 <div class="connection__phone-number">
                     <a href="tel:8(928)555-55-55" class="phone-number">8(928)555-55-55</a>

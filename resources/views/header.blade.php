@@ -2,7 +2,9 @@
     <div class="container">
         <div class="header__row">
             <div class="header__logo">
-                <img src="img/logo-taxi.svg" alt="Logotype taxi">
+                <a href="/">
+                    <img src="img/logo-taxi.svg" alt="Logotype taxi">
+                </a>
             </div>
             <div class="header__nav-bar">
                 <nav class="nav-bar__link">
