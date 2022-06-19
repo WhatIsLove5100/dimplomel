@@ -13,8 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
 Route::get('/', [App\Http\Controllers\MainController::class, 'index']);
-Route::post('/direction', [App\Http\Controllers\MainController::class, 'ditail']);
+
+Route::post('/direction', [App\Http\Controllers\MainController::class, 'detail']);
+
+Route::post('/order', [App\Http\Controllers\OrderController::class, 'index']);
+
+Route::post('/review', [App\Http\Controllers\ReviewController::class, 'index']);
+
+Route::get('/aboutus/', function ()
+{
+    return view('aboutus');
+});
+
+Route::get('/contacts/', function ()
+{
+    return view('contacts');
+});
+
+Route::get('/order/', function ()
+{
+    return view('order');
+});
+
+Route::get('/feedback/', [App\Http\Controllers\AboutController::class, 'index']);

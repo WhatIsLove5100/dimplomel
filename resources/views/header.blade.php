@@ -2,21 +2,21 @@
     <div class="container">
         <div class="header__row">
             <div class="header__logo">
-                <img src="public/img/logo-taxi.svg" alt="Logotype taxi">
+                <img src="img/logo-taxi.svg" alt="Logotype taxi">
             </div>
             <div class="header__nav-bar">
                 <nav class="nav-bar__link">
-                    <a href="#" class="link">О нас</a>
-                    <a href="#" class="link">Отзывы</a>
-                    <a href="#" class="link">Контакты</a>
+                    <a href="/aboutus/" class="link">О нас</a>
+                    <a href="/feedback/" class="link">Отзывы</a>
+                    <a href="/contacts/" class="link">Контакты</a>
                 </nav>
             </div>
             <ul class="header__menu">
                 <li><a href=#>Меню</a>
                     <ul class="ssubmenuu">
-                        <li><a href=#>О нас</a></li>
-                        <li><a href=#>Отзывы</a></li>
-                        <li><a href=#>Контакты</a></li>
+                        <li><a href="/aboutus/">О нас</a></li>
+                        <li><a href="/feedback/">Отзывы</a></li>
+                        <li><a href="/contacts/">Контакты</a></li>
                     </ul>
                 </li>
             </ul>

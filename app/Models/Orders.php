@@ -8,4 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Orders extends Model
 {
     use HasFactory;
+
+    public $timestamps = false;
+
+    protected $table = "orders";
+
+    protected $fillable = 
+    [
+        "place",
+        "date",
+        "time",
+        "full_name",
+        "phone",  
+    ];
 }

@@ -44,7 +44,7 @@
                     @foreach ($directions as $dir)
                         <div class="price__card">
                         <p>{{ $dir->from }} — {{ $dir->to }}</p>
-                        <p>560р</p>
+                        <p>{{ $dir->price }}</p>
                     </div>
                     @endforeach
                 </div>
