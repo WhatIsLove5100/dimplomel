@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/order.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo-taxi.svg" />
     <title>Заказ</title>
 </head>
 <body>
@@ -106,29 +107,29 @@
         <div class="custom-model-inner">        
         <div class="close-btn">×</div>
             <div class="custom-model-wrap">
-                <form action="/order" method="POST">
+                <form id="order-form" action="/order" method="POST">
                     @csrf
                     <div class="pop-up-content-wrap">
                         <div class="pop-up__head">
                             <h2>Заказ такси</h2>
                         </div>
                         <div class="pop-up__input">
-                            <input name="place" type="text" placeholder="Место отправления">
+                            <input id="place" name="place" type="text" placeholder="Место отправления" minlength="3">
                         </div>
                         <div class="pop-up__input pop-up__input-half">
-                            <input name="date" type="text" placeholder="Дата">
+                            <input id="date" name="date" type="text" placeholder="Дата">
                         </div>
                         <div class="pop-up__input pop-up__input-half">
-                            <input name="time" type="text" placeholder="Время">
+                            <input id="time" name="time" type="text" placeholder="Время">
                         </div>
                         <div class="pop-up__head-smal">
                             <h3>Контактная информация</h3>
                         </div>
                         <div class="pop-up__input">
-                            <input name="full_name" type="text" placeholder="ФИО">
+                            <input id="full_name" name="full_name" type="text" placeholder="ФИО">
                         </div>
                         <div class="pop-up__input">
-                            <input name="phone" type="text" placeholder="Номер телефона">
+                            <input id="phone" name="phone" type="text" placeholder="Номер телефона">
                         </div>
                         <div class="pop-up__police">
                             <div class="pop-up__police-checkbox">
@@ -140,7 +141,7 @@
                                 Политики конфиденциальности
                             </div>
                         </div>
-                        <div class="pop-up__btn"><button>Заказать</button></div>
+                        <div class="pop-up__btn submit" type="submit"><button>Заказать</button></div>
                     </div>
                 </form>
             </div>  
@@ -148,6 +149,7 @@
         <div class="bg-overlay"></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

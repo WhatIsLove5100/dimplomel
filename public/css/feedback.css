@@ -145,6 +145,20 @@ img {
     color: #7B6C6C;
 }
 
+input.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
+
+label.error {
+    color: red;
+    font-size: 13px;
+    display: block;
+    margin-top: -20px;
+    margin-bottom: 5px;
+}
+
 .form {
     margin-bottom: 150px;
 }

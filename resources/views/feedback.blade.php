@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/feedback.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo-taxi.svg" />
     <title>Отзывы</title>
 </head>
 <body>
@@ -58,30 +59,33 @@
             <div class="form__title">
                 <h3>Оставить отзыв</h3>
             </div>
-            <form action="/review" method="POST">
+            <form id="review-form" action="/review" method="POST">
                 @csrf
                 <div class="form__input">
-                    <input name="name" type="text" placeholder="Имя">
+                    <input id="full_name" name="name" type="text" placeholder="Имя">
                 </div>
                 <div class="form__input">
-                    <input name="surname" type="text" placeholder="Фамилия">
+                    <input id="surname" name="surname" type="text" placeholder="Фамилия">
                 </div>
                 <div class="form__input">
-                    <textarea name="text" id="" placeholder="Отзыв"></textarea>
+                    <textarea id="text" name="text"  placeholder="Отзыв"></textarea>
                 </div>
                 <div class="form__rating">
                     <div class="rating__star">
                         <span class="star__active"></span>	
                         <span class="star__active"></span>    
                         <span class="star__active"></span>  
-                        <span></span>    
-                        <span></span>
+                        <span class="star__active"></span>    
+                        <span class="star__active"></span>
                     </div>
-                    <button class="form__btn">Отправить</button>
+                    <button class="form__btn submit">Отправить</button>
                 </div>
             </form>
         </div>
     </section>
     @include('footer')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="./scripts/review.js"></script>
 </body>
 </html>

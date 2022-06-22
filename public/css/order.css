@@ -284,8 +284,22 @@ img {
     height: 56px;
     padding: 15px;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     border: 1px solid #56E1E1;
+}
+
+input.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
+
+label.error {
+    color: red;
+    font-size: 13px;
+    display: block;
+    margin-top: -20px;
+    margin-bottom: 5px;
 }
 
 .pop-up__input-half input {

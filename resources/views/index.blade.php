@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo-taxi.svg" />
     <title>Taxi</title>
 </head>
     @include('header')

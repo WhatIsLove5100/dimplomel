@@ -11,6 +11,7 @@ class AboutController extends Controller
     public function index()
     {
         $reviews = Reviews::skip(0)
+        ->orderBy('id', 'DESC')
         ->take(3)
         ->get();
 

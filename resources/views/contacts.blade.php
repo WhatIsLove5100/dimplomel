@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo-taxi.svg" />
     <title>Контакты</title>
 </head>
 <body>

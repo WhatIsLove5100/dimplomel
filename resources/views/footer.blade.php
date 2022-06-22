@@ -8,7 +8,7 @@
             <div class="contacts__list">
                 <ul class="list__link">
                     <li><a href="/aboutus/">О нас</a></li>
-                    <li><a href="/feedback/">Частые вопросы</a></li>
+                    <li><a href="/feedback/">Отзывы</a></li>
                     <li><a href="/contacts/">Контакты</a></li>
                 </ul>
             </div>
